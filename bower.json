@@ -1,0 +1,31 @@
+{
+  "name": "crash-frontend",
+  "description": "base frontend project",
+  "main": "index.js",
+  "authors": [
+    "Dmitriy Sinitsyn"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.*",
+    "Chart.js": "^2.1.6",
+    "handlebars": "^4.0.5"
+  },
+  "devDependencies": {
+    "jquery-ui": "^1.11.4",
+    "mjolnic-bootstrap-colorpicker": "bootstrap-colorpicker#^2.3.3",
+    "froala-wysiwyg-editor": ">=1.7.7",
+    "font-awesome": ">=4.4.0"
+  }
+}

@@ -1,0 +1,180 @@
+//= templates/head.html
+<div class="container">
+	<h1>Slider attributes: </h1>
+	<ul>
+		<li>
+			data-arrows="true" : create slider control with prev and next arrows(this attribute has a default "true");
+		</li>
+		<li>
+			data-carousel="true" : creates a scrolling slider in a circle(this attribute has a default "true");
+		</li>
+		<li>
+			data-dotted="true" : create slider control with dotted paginator;
+		</li>
+		<li>
+			data-pagination="true" : create display position of current slide;
+		</li>
+		<li>
+			data-cells="true" : it includes the contents of the slides in the specified quantity;
+		</li>
+		<li>
+			data-animate="fade" : animates the change slide with fade;
+		</li>
+		<li>
+			data-touch="true" : create change slides with swipes;
+		</li>
+		<li>
+			data-touch="true" : create autoslide function in ms;
+		</li>
+	</ul>
+	<h2>Examples: </h2>
+	<div class="grid-2">
+		<div class="cell-1">
+			<div class="slider-wrapper">
+		        <div class="slide">
+		           <img src="../img/tmp/img-slider.jpg" alt="">
+		        </div>
+		        <div class="slide">
+		           <img src="../img/tmp/img-slider1.jpg" alt="">
+		        </div>
+		        <div class="slide">
+		           <img src="../img/tmp/img-slider2.jpg" alt="">
+		        </div>
+			</div>
+		</div>
+		<div class="cell-1">
+			<h3>Custom slider without attributes</h3>
+			<div class="html-code">
+				<pre>
+<code>
+	<span class="tag">&lt;<span class="keyword">div</span> <span class="attribute">class="slider-wrapper"</span></span>
+		<span class="tag">&lt;<span class="keyword">div</span> <span class="attribute">class="slide"</span>&gt;</span>...<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+		<span>...</span>
+	<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+</code>
+				</pre>
+			</div>
+		</div>
+	</div>
+	<div class="grid-2">
+		<div class="cell-1">
+			<div class="slider-wrapper" data-arrows="false" data-pagination="true" data-dotted="true">
+		        <div class="slide">
+		           <img src="../img/tmp/img-slider.jpg" alt="">
+		        </div>
+		        <div class="slide">
+		           <img src="../img/tmp/img-slider1.jpg" alt="">
+		        </div>
+		        <div class="slide">
+		           <img src="../img/tmp/img-slider2.jpg" alt="">
+		        </div>
+			</div>
+		</div>
+		<div class="cell-1">
+			<h3>Slider with dottes and pagination</h3>
+			<div class="html-code">
+				<pre>
+<code>
+	<span class="tag">&lt;<span class="keyword">div</span> <span class="attribute">class="slider-wrapper"</span> <span class="attribute">data-arrows="false"</span> <span class="attribute">data-pagination="true"</span> <span class="attribute">data-dotted="true"</span></span>
+		<span class="tag">&lt;<span class="keyword">div</span> <span class="attribute">class="slide"</span>&gt;</span>...<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+		<span>...</span>
+	<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+</code>
+				</pre>
+			</div>
+		</div>
+	</div>
+	<div class="grid-2">
+		<div class="cell-1">
+			<div class="slider-wrapper" data-arrows="true" data-cells="3" data-pagination="true">
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider1.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider2.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider1.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider2.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider1.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider2.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider1.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider2.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider1.jpg" alt="">
+		        </div>
+		        <div class="cell-1">
+		           <img src="../img/tmp/img-slider2.jpg" alt="">
+		        </div>
+			</div>
+		</div>
+		<div class="cell-1">
+			<h3>Slider with 3 items in slide and pagination</h3>
+			<div class="html-code">
+				<pre>
+<code>
+	<span class="tag">&lt;<span class="keyword">div</span> <span class="attribute">class="slider-wrapper"</span> <span class="attribute">data-arrows="true"</span> <span class="attribute">data-cells="3"</span> <span class="attribute">data-pagination="true"</span></span>
+		<span class="tag">&lt;<span class="keyword">div</span> <span class="attribute">class="cell-1"</span>&gt;</span>...<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+		<span>...</span>
+	<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+</code>
+				</pre>
+			</div>
+		</div>
+	</div>
+	<div class="grid-2">
+		<div class="cell-1">
+			<div class="slider-wrapper" data-arrows="false" data-dotted="true" data-autoslide="3000"data-pagination="true">
+		        <div class="slide">
+		           <img src="../img/tmp/img-slider.jpg" alt="">
+		        </div>
+		        <div class="slide">
+		           <img src="../img/tmp/img-slider1.jpg" alt="">
+		        </div>
+		        <div class="slide">
+		           <img src="../img/tmp/img-slider2.jpg" alt="">
+		        </div>
+			</div>
+		</div>
+		<div class="cell-1">
+			<h3>Slider with dottes and auto change slide every 3 seconds </h3>
+			<div class="html-code">
+				<pre>
+<code>
+	<span class="tag">&lt;<span class="keyword">div</span> <span class="attribute">class="slider-wrapper"</span> <span class="attribute">data-arrows="false"</span> <span class="attribute">data-dotted="true"</span> <span class="attribute">data-autoslide="3000"</span></span>
+		<span class="tag">&lt;<span class="keyword">div</span> <span class="attribute">class="slide"</span>&gt;</span>...<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+		<span>...</span>
+	<span class="tag">&lt;/<span class="keyword">div</span>&gt;</span>
+</code>
+				</pre>
+			</div>
+		</div>
+	</div>
+</div>
+//= templates/footer.html

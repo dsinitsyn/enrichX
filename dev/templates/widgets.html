@@ -1,0 +1,42 @@
+//= templates/head.html
+<div class="container">
+	<div class="grid-12" id="charts-category">
+		
+	</div>
+</div>
+
+<script id="chart-template" type="text/x-handlebars-template">
+	<div class="cell-{{chartWidth}}">
+		<div class="widget chart">
+			<header>
+				{{chartTitle}}
+			</header>
+			<section class="grid-12">
+				<div class="cell-6">
+					<ul class="tabs">
+						<li><a href="Day" class="">Day</a></li>
+						<li><a href="Week" class="">Week</a></li>
+						<li><a href="Month" class="active">Month</a></li>
+						<li><a href="Year" class="">Year</a></li>
+					</ul>
+				</div>
+				<div class="cell-6 filters">
+					<input type="text" class="chart-datepicker beginRange">
+					<input type="text" class="chart-datepicker endRange">
+					<button class="changeFilter button green-btn">
+						Filter
+					</button>
+				</div>				
+			</section>
+			<div class="tabs-content">
+				<div class="active chart-body">
+					<p style="display: none;" class="emptyChart">
+						No data to display
+					</p>
+					<canvas id="chart-{{name}}" class="chart" data-chartname="{{name}}"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+//= templates/footer.html

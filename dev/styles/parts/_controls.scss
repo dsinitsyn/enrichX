@@ -1,0 +1,126 @@
+.button{
+	background: none;
+	outline: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	margin-left: .2em;
+	margin-right: .2em;
+	cursor: pointer;
+	font-family: 'Roboto';
+
+
+	&.blue-btn{
+		background: $blue;
+		color: #fff;
+		height: 28px;
+		padding: 7px 10px;
+		border-radius: 4px;
+
+		&:hover{
+			background: $blue - #0C0C0C;
+
+			&:before{
+				background: #3b71b4 - #0C0C0C;
+			}
+		}
+
+		&:before{
+			background: #3b71b4;
+		}
+	}
+
+	&.green-btn{
+		background: $green;
+		color: #fff;
+		height: 28px;
+		padding: 7px 10px;
+		border-radius: 4px;
+
+		&:hover{
+			background: $green - #0C0C0C;
+
+			&:before{
+				background: #379e61 - #0C0C0C;
+			}
+		}
+
+		&:before{
+			background: #379e61;
+		}
+	}
+
+	&.icon-btn{
+		position: relative;
+		padding-left: 40px !important;
+
+		&:before{
+			font-family: "enreichx-icon";
+			text-align: center;
+    		content: "";
+    		font-size: 18px;
+    		height: 100%;
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		padding-top: 4px;
+    		border-radius: 4px 0 0 4px;
+    		width: 34px;
+		}
+	}
+
+	&.reset-btn{
+		@extend .icon-btn;
+		@extend .blue-btn;
+
+		&:before{
+    		content: "r";
+		}
+	}
+
+	&.export-btn{
+		@extend .icon-btn;
+		@extend .green-btn;
+
+		&:before{
+    		content: "e";
+		}
+	}
+}
+
+.reset-btn{
+	background: none;
+	outline: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+select{
+	font-family: 'Roboto';
+	border: 1px solid $gray;
+	background: linear-gradient(to top,  #f7f7f7 0%, #fff 100%);
+	padding: 3px 30px 3px 8px;
+	height: 28px;
+	border-radius: 4px;
+	font-size: 13px;
+	background: url(../../img/controls/select-arrows.svg) no-repeat center right 5px;
+	background-size: 7px;
+	color: #3d5066;
+
+}
+
+input[type=text]{
+	font-family: 'Roboto';
+	border: 1px solid $gray;
+	height: 28px;
+	padding: 3px 10px;
+	color: #3d5066;
+}

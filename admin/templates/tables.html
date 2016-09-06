@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<title>EnrichX</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://file.myfontastic.com/moSRyvkVpCWnTBx8bz3syW/icons.css" rel="stylesheet">
+
+
+    <script src="../js/components.js"></script>
+    <script src='../../components/tinymce/js/tinymce/tinymce.min.js'></script>
+</head>
+<body>
+<ul class="mig-breadcrumbs">
+</ul>
+<div class="container">
+	<div class="top-panel">
+		<button type="button" class="button preview-btn">Preview</button>
+		<button type="button" class="button save-btn">Save</button>
+		<button type="button" class="button continue-btn">Save and continue</button>
+	</div>
+	<div class="grid">
+		<div class="cell">
+			<div class="widget">
+				<header>Table name</header>
+				<section class="table-nav">
+					<div class="nav-group">
+						<label for="nav-select">View</label>
+						<select id="nav-select" class="nav-pages" name="nav-select" id="">
+							<option value="2">50</option>
+							<option value="2">100</option>
+							<option value="3">200</option>
+							<option value="4">500</option>
+						</select>
+						<label for="nav-select">items per page</label>
+					</div>
+					<div class="nav-group">
+						<label for="nav-input">Page</label>
+						<input class="nav-pages" type="text" value="2">
+						<label for="nav-input">of 22</label>
+					</div>
+					<div class="nav-group">
+						<ul class="nav-pagination">
+							<li><a href="#"><i class="icon-nav-first"></i></a></li>
+							<li><a href="#"><i class="icon-nav-left"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#" class="active">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">...</a></li>
+							<li><a href="#">17</a></li>
+							<li><a href="#"><i class="icon-nav-right"></i></a></li>
+							<li><a href="#"><i class="icon-nav-last"></i></a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="action-panel">
+					<select class="action-select" name="" id="">
+						<option value="" disabled="" selected="">Bulk action (33 selected)</option>
+						<option value="">Action event 1</option>
+						<option value="">Action event 2</option>
+						<option value="">Action event 3</option>
+						<option value="">Action event 4</option>
+					</select>
+					<button type="button" class="button blue-btn">Filter</button>
+					<button type="button" class="button reset-btn">Reset filters</button>
+					<button type="button" class="button blue-btn">Deselect</button>
+
+					<div class="float-right">
+						<select name="" id="">
+							<option value="">CSV</option>
+							<option value="">Option 1</option>
+							<option value="">Option 1</option>
+							<option value="">Option 1</option>
+							<option value="">Option 1</option>
+						</select>
+						<button type="button" class="button export-btn">Export</button>
+					</div>
+				</section>
+				<table class="table">
+					<thead>
+						<tr>
+							<td>Select</td>
+							<td>Id</td>
+							<td>Name</td>
+							<td>Complete</td>
+							<td>Image</td>
+							<td>SKU</td>
+							<td>Price</td>
+							<td>Quantity</td>
+							<td>Visibility</td>
+							<td>Status</td>
+							<td>Websites</td>
+							<td>Action</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td align="center"><input id="item1-checkbox" type="checkbox"><label for="item1-checkbox"></label></td>
+							<td>2134</td>
+							<td>Product name</td>
+							<td>Status</td>
+							<td>
+								<img src="../img/tmp/product-1.jpg" alt="">
+							</td>
+							<td>90620010199</td>
+							<td>€17.99</td>
+							<td>509</td>
+							<td>Search <br>Category</td>
+							<td>Live</td>
+							<td>
+								Spain <br>
+								Portugal <br>
+								France
+							</td>
+							<td>
+								<button class="button mig-inset-btn" data-href="templates/assets-video.html" name="Edit product name">Edit</button>
+								<button data-href="#delete-modal" class="button modal-link" name="">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td align="center"><input id="item2-checkbox" type="checkbox"><label for="item2-checkbox"></label></td>
+							<td>2134</td>
+							<td>Product name</td>
+							<td>Status</td>
+							<td>
+								<img src="../img/tmp/product-1.jpg" alt="">
+							</td>
+							<td>90620010199</td>
+							<td>€17.99</td>
+							<td>509</td>
+							<td>Search <br>Category</td>
+							<td>Live</td>
+							<td>
+								Spain <br>
+								Portugal <br>
+								France
+							</td>
+							<td>
+								<button class="button mig-inset-btn" data-href="templates/assets-video.html" name="Edit product name">Edit</button>
+								<button data-href="#delete-modal" class="button modal-link" name="">Delete</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<section class="table-nav">
+					<div class="nav-group">
+						<label>View</label>
+						<select class="nav-pages" name="nav-select" id="">
+							<option value="2">50</option>
+							<option value="2">100</option>
+							<option value="3">200</option>
+							<option value="4">500</option>
+						</select>
+						<label>items per page</label>
+					</div>
+					<div class="nav-group">
+						<label>Page</label>
+						<input class="nav-pages" type="text" value="2">
+						<label>of 22</label>
+					</div>
+					<div class="nav-group">
+						<ul class="nav-pagination">
+							<li><a href="#"><i class="icon-nav-first"></i></a></li>
+							<li><a href="#"><i class="icon-nav-left"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#" class="active">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">...</a></li>
+							<li><a href="#">17</a></li>
+							<li><a href="#"><i class="icon-nav-right"></i></a></li>
+							<li><a href="#"><i class="icon-nav-last"></i></a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="cell">
+			<div class="widget">
+				<header>Table name</header>
+				<aside class="action-panel">
+					<div class="group">
+						<label for="text_01">Regular input</label>
+						<input id="text_01" type="text">
+					</div>
+					<div class="group">
+						<label for="select_01">Select</label>
+						<select id="select_01" name="select">
+							<option value="" disabled="" selected="">Placeholder</option>
+							<option value="">Action event 1</option>
+							<option value="">Action event 2</option>
+							<option value="">Action event 3</option>
+							<option value="">Action event 4</option>
+						</select>
+					</div>
+					<div class="group">
+						<label for="search">Search</label>
+						<input id="search" type="search" placeholder="Search...">
+					</div>
+					<div class="group">
+						<button type="button" class="button reset-btn">Reset filters</button>
+					</div>
+				</aside>
+				<main class="widget-content">
+					<section class="table-nav">
+						<div class="nav-group">
+							<label for="nav-select">View</label>
+							<select id="nav-select" class="nav-pages" name="nav-select" id="">
+								<option value="2">50</option>
+								<option value="2">100</option>
+								<option value="3">200</option>
+								<option value="4">500</option>
+							</select>
+							<label for="nav-select">items per page</label>
+						</div>
+						<div class="nav-group">
+							<label for="nav-input">Page</label>
+							<input class="nav-pages" type="text" value="2">
+							<label for="nav-input">of 22</label>
+						</div>
+						<div class="nav-group">
+							<ul class="nav-pagination">
+								<li><a href="#"><i class="icon-nav-first"></i></a></li>
+								<li><a href="#"><i class="icon-nav-left"></i></a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#" class="active">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">...</a></li>
+								<li><a href="#">17</a></li>
+								<li><a href="#"><i class="icon-nav-right"></i></a></li>
+								<li><a href="#"><i class="icon-nav-last"></i></a></li>
+							</ul>
+						</div>
+					</section>
+					<table class="table">
+						<thead>
+							<tr>
+								<td>Select</td>
+								<td>Id</td>
+								<td>Name</td>
+								<td>Complete</td>
+								<td>Image</td>
+								<td>SKU</td>
+								<td>Price</td>
+								<td>Quantity</td>
+								<td>Visibility</td>
+								<td>Status</td>
+								<td>Websites</td>
+								<td>Action</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td align="center"><input id="item1-checkbox" type="checkbox"><label for="item1-checkbox"></label></td>
+								<td>2134</td>
+								<td>Product name</td>
+								<td>Status</td>
+								<td>
+									<img src="../img/tmp/product-1.jpg" alt="">
+								</td>
+								<td>90620010199</td>
+								<td>€17.99</td>
+								<td>509</td>
+								<td>Search <br>Category</td>
+								<td>Live</td>
+								<td>
+									Spain <br>
+									Portugal <br>
+									France
+								</td>
+								<td>
+									<button class="button mig-inset-btn" data-href="templates/assets-video.html" name="Edit product name">Edit</button>
+								<button data-href="#delete-modal" class="button modal-link" name="">Delete</button>
+								</td>
+							</tr>
+							<tr>
+								<td align="center"><input id="item2-checkbox" type="checkbox"><label for="item2-checkbox"></label></td>
+								<td>2134</td>
+								<td>Product name</td>
+								<td>Status</td>
+								<td>
+									<img src="../img/tmp/product-1.jpg" alt="">
+								</td>
+								<td>90620010199</td>
+								<td>€17.99</td>
+								<td>509</td>
+								<td>Search <br>Category</td>
+								<td>Live</td>
+								<td>
+									Spain <br>
+									Portugal <br>
+									France
+								</td>
+								<td>
+									<button class="button mig-inset-btn" data-href="templates/assets-video.html" name="Edit product name">Edit</button>
+									<button data-href="#delete-modal" class="button modal-link" name="">Delete</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<section class="table-nav">
+						<div class="nav-group">
+							<label>View</label>
+							<select class="nav-pages" name="nav-select" id="">
+								<option value="2">50</option>
+								<option value="2">100</option>
+								<option value="3">200</option>
+								<option value="4">500</option>
+							</select>
+							<label>items per page</label>
+						</div>
+						<div class="nav-group">
+							<label>Page</label>
+							<input class="nav-pages" type="text" value="2">
+							<label>of 22</label>
+						</div>
+						<div class="nav-group">
+							<ul class="nav-pagination">
+								<li><a href="#"><i class="icon-nav-first"></i></a></li>
+								<li><a href="#"><i class="icon-nav-left"></i></a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#" class="active">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">...</a></li>
+								<li><a href="#">17</a></li>
+								<li><a href="#"><i class="icon-nav-right"></i></a></li>
+								<li><a href="#"><i class="icon-nav-last"></i></a></li>
+							</ul>
+						</div>
+					</section>
+				</main>
+			</div>
+		</div>
+	</div>
+	<div class="grid-2">
+		<div class="cell-1">
+			<div class="widget">
+				<header>
+					Status table
+				</header>
+				<table class="status-table">
+					<thead>
+						<tr>
+							<td class="green">20,834</td>
+							<td class="red">33</td>
+							<td class="orange">70</td>
+							<td class="orange">56</td>
+							<td class="orange">4</td>
+							<td class="orange">4,800</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Complete products</td>
+							<td>Missing descriptions</td>
+							<td>Incomplete descriptions</td>
+							<td>Incomplete media</td>
+							<td>Missing categorisation</td>
+							<td>Incomplete SEO</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="cell-1">
+			<div class="widget">
+				<header>
+					Tabs widget
+				</header>
+				<section>
+					<ul class="tabs">
+						<li><a href="#today" class="active">Today</a></li>
+						<li><a href="#week">Week</a></li>
+						<li><a href="#month">Month</a></li>
+						<li><a href="#year">Year</a></li>
+					</ul>					
+				</section>
+				<div class="tabs-content">
+					<div id="today" class="active">
+						<table class="widget-table">
+							<thead>
+								<tr>
+									<td align="center"></td>
+									<td>Item</td>
+									<td>Price</td>
+									<td>Sales</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">1</td>
+									<td>Kimono bordado</td>
+									<td>€22.99</td>
+									<td>11</td>
+								</tr>
+								<tr>
+									<td align="center">2</td>
+									<td>Kaftán calado</td>
+									<td>€22.99</td>
+									<td>35</td>
+								</tr>
+								<tr>
+									<td align="center">3</td>
+									<td>Mono corto espalda cruzada</td>
+									<td>€3.99</td>
+									<td>23</td>
+								</tr>
+								<tr>
+									<td align="center">4</td>
+									<td>Denim jackets</td>
+									<td>€12.99</td>
+									<td>32</td>
+								</tr>
+								<tr>
+									<td align="center">5</td>
+									<td>Top corto paillettes</td>
+									<td>€25.99</td>
+									<td>55</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="week">
+						<table class="widget-table">
+							<thead>
+								<tr>
+									<td align="center"></td>
+									<td>Item</td>
+									<td>Price</td>
+									<td>Sales</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">1</td>
+									<td>Kimono bordado</td>
+									<td>€22.99</td>
+									<td>11</td>
+								</tr>
+								<tr>
+									<td align="center">2</td>
+									<td>Kaftán calado</td>
+									<td>€22.99</td>
+									<td>35</td>
+								</tr>
+								<tr>
+									<td align="center">3</td>
+									<td>Mono corto espalda cruzada</td>
+									<td>€3.99</td>
+									<td>23</td>
+								</tr>
+								<tr>
+									<td align="center">4</td>
+									<td>Denim jackets</td>
+									<td>€12.99</td>
+									<td>32</td>
+								</tr>
+								<tr>
+									<td align="center">5</td>
+									<td>Top corto paillettes</td>
+									<td>€25.99</td>
+									<td>55</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="month">
+						<table class="widget-table">
+							<thead>
+								<tr>
+									<td align="center"></td>
+									<td>Item</td>
+									<td>Price</td>
+									<td>Sales</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">1</td>
+									<td>Kimono bordado</td>
+									<td>€22.99</td>
+									<td>11</td>
+								</tr>
+								<tr>
+									<td align="center">2</td>
+									<td>Kaftán calado</td>
+									<td>€22.99</td>
+									<td>35</td>
+								</tr>
+								<tr>
+									<td align="center">3</td>
+									<td>Mono corto espalda cruzada</td>
+									<td>€3.99</td>
+									<td>23</td>
+								</tr>
+								<tr>
+									<td align="center">4</td>
+									<td>Denim jackets</td>
+									<td>€12.99</td>
+									<td>32</td>
+								</tr>
+								<tr>
+									<td align="center">5</td>
+									<td>Top corto paillettes</td>
+									<td>€25.99</td>
+									<td>55</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="year">
+						<table class="widget-table">
+							<thead>
+								<tr>
+									<td align="center"></td>
+									<td>Item</td>
+									<td>Price</td>
+									<td>Sales</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">1</td>
+									<td>Kimono bordado</td>
+									<td>€22.99</td>
+									<td>11</td>
+								</tr>
+								<tr>
+									<td align="center">2</td>
+									<td>Kaftán calado</td>
+									<td>€22.99</td>
+									<td>35</td>
+								</tr>
+								<tr>
+									<td align="center">3</td>
+									<td>Mono corto espalda cruzada</td>
+									<td>€3.99</td>
+									<td>23</td>
+								</tr>
+								<tr>
+									<td align="center">4</td>
+									<td>Denim jackets</td>
+									<td>€12.99</td>
+									<td>32</td>
+								</tr>
+								<tr>
+									<td align="center">5</td>
+									<td>Top corto paillettes</td>
+									<td>€25.99</td>
+									<td>55</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="grid-3">
+		<div class="cell-1">
+			<div class="widget">
+				<header>Colour picker</header>
+				<table class="table">
+					<thead>
+						<tr>
+							<td>Status</td>
+							<td>Color</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Failed/Voided</td>
+							<td>
+								<div class="input-group colorpicker-component">
+									<span class="input-group-addon"><i></i></span>
+								    <input type="text" value="#FF0000" class="form-control" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Completed/Shipped</td>
+							<td>
+								<div class="input-group colorpicker-component">
+									<span class="input-group-addon"><i></i></span>
+								    <input type="text" value="#0BA336" class="form-control" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Pending</td>
+							<td>
+								<div class="input-group colorpicker-component">
+									<span class="input-group-addon"><i></i></span>
+								    <input type="text" value="#FFFB00" class="form-control" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Processing</td>
+							<td>
+								<div class="input-group colorpicker-component">
+									<span class="input-group-addon"><i></i></span>
+								    <input type="text" value="#0099FF" class="form-control" />
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="cell-1">
+            <div class="widget">
+                <header>Change Order</header>
+                <section class="action-panel">
+                    <button data-order="#tableId" type="button" class="button reorder-btn">Change Order</button>
+                    <button type="button" class="button save-btn" style="display: none;">Save</button>
+                    <input type="hidden" name="#tableId" class="order-hidden">
+                </section>
+                <table class="table" id="tableId">
+                    <thead>
+                        <tr>
+                            <td>Number</td>
+                            <td>Name</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="1">
+                            <td>1</td>
+                            <td>
+                                In the end
+                            </td>
+                        </tr>
+                        <tr id="2">
+                            <td>2</td>
+                            <td>
+                                One step closer
+                            </td>
+                        </tr>
+                        <tr id="3">
+                            <td>3</td>
+                            <td>
+                                From the inside
+                            </td>
+                        </tr>
+                        <tr id="4">
+                            <td>4</td>
+                            <td>
+                                Leave out all the rest
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	<div class="grid">
+		<div class="cell">
+			<div class="widget">
+				<header>Table name</header>
+				<section class="action-panel">
+					<select class="action-select" name="" id="">
+						<option value="" disabled="" selected="">Bulk action (33 selected)</option>
+						<option value="">Action event 1</option>
+						<option value="">Action event 2</option>
+						<option value="">Action event 3</option>
+						<option value="">Action event 4</option>
+					</select>
+					<button type="button" class="button blue-btn">Filter</button>
+					<button type="button" class="button reset-btn">Reset filters</button>
+					<button type="button" class="button blue-btn">Deselect</button>
+
+					<div class="float-right">
+						<select name="" id="">
+							<option value="">CSV</option>
+							<option value="">Option 1</option>
+							<option value="">Option 1</option>
+							<option value="">Option 1</option>
+							<option value="">Option 1</option>
+						</select>
+						<button type="button" class="button export-btn">Export</button>
+					</div>
+				</section>
+				<table class="table products-overview">
+					<thead>
+						<tr>
+							<td></td>
+							<td>Product</td>
+							<td>Image</td>
+							<td>SKU</td>
+							<td>Color</td>
+							<td>Size</td>
+							<td>Price</td>
+							<td>Category</td>
+							<td>Collection</td>
+							<td>Status</td>
+							<td>Count</td>
+							<td>Stock</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td align="center" rowspan="" class="to-top">
+								<input id="product1-checkbox" type="checkbox">
+								<label for="product1-checkbox"></label>
+							</td>
+							<td rowspan="" class="to-top">
+								<a href="#" class="product-accordion-link" data-value="1">Product name<i class="icon-angle-down"></i></a>
+							</td>
+							<td>
+								<img class="product-image" src="../img/tmp/product-1.jpg" alt="">
+							</td>
+							<td>90620010199</td>
+							<td>
+								<div class="colors-cell">
+									<span style="background-color: red;"></span>
+									<span style="background-color: blue;"></span>
+									<span style="background-color: black;"></span>
+								</div>
+							</td>
+							<td>XS,S,M,L</td>
+							<td>€17.99</td>
+							<td></td>
+							<td></td>
+							<td>Disabled</td>
+							<td>2762</td>
+							<td>In stock</td>
+						</tr>
+						<tr>
+							<td align="center" rowspan="" class="to-top">
+								<input id="product2-checkbox" type="checkbox">
+								<label for="product2-checkbox"></label>
+							</td>
+							<td rowspan="" class="to-top">
+								<a href="#" class="product-accordion-link" data-value="2">Product name<i class="icon-angle-down"></i></a>
+							</td>
+							<td>
+								<img class="product-image" src="../img/tmp/product-1.jpg" alt="">
+							</td>
+							<td>90620010199</td>
+							<td>
+								<div class="colors-cell">
+									<span style="background-color: red;"></span>
+									<span style="background-color: blue;"></span>
+									<span style="background-color: black;"></span>
+								</div>
+							</td>
+							<td>XS,S,M,L</td>
+							<td>€17.99</td>
+							<td></td>
+							<td></td>
+							<td>Disabled</td>
+							<td>2762</td>
+							<td>In stock</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="backdrop">
+	<div class="modal" id="delete-modal">
+		<button type="button" class="modal-close-btn">
+			<i class="icon-close"></i>
+		</button>
+		<div class="grid underline">
+			<div class="cell">
+				<h5 class="align-center" data-message>You are trying to delete the parent navigation item. This will delete all child items. Are you sure?</h5>
+			</div>
+		</div>
+		<div class="grid-2 m0">
+			<div><button type="button" data-delete class="button blue-btn float-right" onclick="MigAjax.request(this,{eventTarget:'cBtnYes', eventArgument:'1'}); return false;">Delete</button></div>
+			<div><button type="button" class="button gray-btn modal-close-btn">Cancel</button></div>
+		</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		$('.colorpicker-component').colorpicker({
+			align: 'left'
+		});
+	});
+</script>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

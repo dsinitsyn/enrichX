@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: "enreichx-icon";
+  src:url("../fonts/enreichx-icon.eot");
+  src:url("../fonts/enreichx-icon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/enreichx-icon.woff") format("woff"),
+    url("../fonts/enreichx-icon.ttf") format("truetype"),
+    url("../fonts/enreichx-icon.svg#enreichx-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "enreichx-icon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "enreichx-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tab-close:before {
+  content: "\78";
+}
+.icon-right-open:before {
+  content: "\3e";
+}
+.icon-select:before {
+  content: "\35";
+}
+.icon-nav-first:before {
+  content: "\31";
+}
+.icon-nav-left:before {
+  content: "\32";
+}
+.icon-nav-right:before {
+  content: "\33";
+}
+.icon-nav-last:before {
+  content: "\34";
+}
+.icon-reset:before {
+  content: "\72";
+}
+.icon-export:before {
+  content: "\65";
+}
+.icon-save:before {
+  content: "\73";
+}
+.icon-continue:before {
+  content: "\63";
+}
+.icon-preview:before {
+  content: "\70";
+}
+.icon-plus:before {
+  content: "\2b";
+}
+.icon-edit:before {
+  content: "\62";
+}
+.icon-edit:before {
+  content: "\64";
+}
+.icon-publish:before {
+  content: "\2f";
+}
+.icon-upload:before {
+  content: "\75";
+}
+.icon-close:before {
+  content: "\6c";
+}
+.icon-angle-down:before {
+  content: "\68";
+}
+.icon-angle-up:before {
+  content: "\74";
+}
+.icon-calendar:before {
+  content: "\6a";
+}
+.icon-info:before {
+  content: "\69";
+}
+.icon-exclamation:before {
+  content: "\21";
+}
+.icon-check:before {
+  content: "\67";
+}
+.icon-compress:before {
+  content: "\6b";
+}
+.icon-expand:before {
+  content: "\6d";
+}
+.icon-reorder:before {
+  content: "\6f";
+}
+.icon-download:before {
+  content: "\61";
+}

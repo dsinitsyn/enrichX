@@ -1,0 +1,23 @@
+[
+	"dev/js/plugins/mediaelement-and-player.js",
+	"dev/js/parts/mig-modal.js",
+	"dev/js/parts/mig-alert.js",
+	"dev/js/parts/mig-dropper.js",
+	"dev/js/parts/mig-slider.js",
+	"dev/js/parts/mig-taginput.js",
+	"dev/js/parts/mig-tree.js",
+	"dev/js/parts/mig-reorder.js",
+	"dev/js/parts/mig-chart.js",
+	"dev/js/parts/mig-products-overview.js",
+	"dev/js/parts/mig-shipping.js",
+	"dev/js/parts/mig-shipping-countries.js",
+	"dev/js/parts/mig-shipp-countries-search.js",
+	"dev/js/parts/mig-select-search.js",
+	"dev/js/parts/mig-promo-search.js",
+	"dev/js/parts/mig-multicheck.js",
+	"dev/js/parts/mig-player.js",
+	"dev/js/parts/mig-player.js",
+	"dev/js/parts/mig-cropper.js",
+	"dev/js/parts/mig-multi-check.js",
+	"dev/js/parts/script.js"
+]

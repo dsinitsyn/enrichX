@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<title>EnrichX</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://file.myfontastic.com/moSRyvkVpCWnTBx8bz3syW/icons.css" rel="stylesheet">
+
+
+    <script src="../js/components.js"></script>
+    <script src='../../components/tinymce/js/tinymce/tinymce.min.js'></script>
+</head>
+<body>
+<ul class="mig-breadcrumbs">
+</ul>
+<div class="container">
+	<div class="grid">
+		<div class="cell">
+			<button type="button" class="button add-btn">Add folder</button> 
+			<button type="button" class="button upload-btn" id="asset-upload-btn">Upload asset</button>
+			<div class="asset-upload-group">
+				<label type="button" class="button blue-btn file-btn">
+					Choose file
+				<input type="file" multiple>
+				</label>
+				<select name="select" >
+					<option value="" disabled="" selected="">Select directory...</option>
+					<option value="">Folder name 1</option>
+					<option value="">Folder name 2</option>
+					<option value="">Folder name 3</option>
+					<option value="">Folder name 4</option>
+				</select>
+				<button type="button" class="button green-btn" disabled>Upload</button>
+			</div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="cell">
+			<div class="widget">
+				<header>Assets (306)</header>
+				<section class="action-panel">
+					<div class="action-group">
+						<label for="">Sort by:</label>
+						<select name="" id="">
+							<option value="">Data created</option>
+							<option value="">Data created</option>
+							<option value="">Data created</option>
+							<option value="">Data created</option>
+						</select>
+						<input type="search" placeholder="Search...">
+					</div>
+					<div class="action-group">
+						<button id="selection-btn" type="button" class="button blue-btn">Select all</button>
+						<input id="selection-hidden" type="hidden">
+						<select name="select" >
+							<option value="">Add selected images to clipboard</option>
+							<option value="">Action event 2</option>
+							<option value="">Action event 3</option>
+							<option value="">Action event 4</option>
+						</select>
+					</div>
+				</section>
+				<section>
+					<ul class="asset-folder-list">
+						<li>
+							<a class="mig-inset-btn folder" name="Video assets" href="templates/assets-video.html">
+								<span class="folder-counter">
+									2
+								</span>
+								<p class="folder-name">
+									Videos
+								</p>
+							</a>
+						</li>
+						<li>
+							<a class="mig-inset-btn folder" href="#">
+								<span class="folder-counter">
+									23
+								</span>
+								<p class="folder-name">
+									Files
+								</p>
+							</a>
+						</li>
+						<li>
+							<a class="mig-inset-btn folder" href="#">
+								<span class="folder-counter">
+									23
+								</span>
+								<p class="folder-name">
+									Folder name
+								</p>
+							</a>
+						</li>
+						<li>
+							<a class="mig-inset-btn folder" href="#">
+								<span class="folder-counter">
+									23
+								</span>
+								<p class="folder-name">
+									Folder name
+								</p>
+							</a>
+						</li>
+						<li>
+							<a class="mig-inset-btn folder" href="#">
+								<span class="folder-counter">
+									23
+								</span>
+								<p class="folder-name">
+									Folder name
+								</p>
+							</a>
+						</li>
+						<li>
+							<a class="mig-inset-btn folder" href="#">
+								<span class="folder-counter">
+									23
+								</span>
+								<p class="folder-name">
+									Folder name
+								</p>
+							</a>
+						</li>
+						<li>
+							<a class="mig-inset-btn folder" href="#">
+								<span class="folder-counter">
+									23
+								</span>
+								<p class="folder-name">
+									Folder name
+								</p>
+							</a>
+						</li>
+						<li>
+							<a class="mig-inset-btn folder" href="#">
+								<span class="folder-counter">
+									23
+								</span>
+								<p class="folder-name">
+									Folder name
+								</p>
+							</a>
+						</li>
+						<li>
+							<a class="mig-inset-btn folder" href="#">
+								<span class="folder-counter">
+									23
+								</span>
+								<p class="folder-name">
+									Folder name
+								</p>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<ul class="asset-list">
+						<li class="asset" data-type="image" data-id="00001">
+							<span class="asset-selection">
+								<input id="asset-checkbox-1" class="asset-checkbox" type="checkbox"><label for="asset-checkbox-1"></label>
+							</span>
+							<figure class="asset-view">
+								<a class="modal-link" href="#image-modal">
+									<img class="asset-image" src="../img/tmp/asset-image.jpg" alt="">
+								</a>
+							</figure>
+							<div class="asset-details">
+								<p class="asset-name">asset-image-1.jpg</p>
+								<p class="asset-size">1.2mb</p>
+								<p class="asset-date">13 December 2015</p>
+								<button type="button" class="button small-btn green-btn" onclick="parent.migAsset.createAsset(this);">Add to clipboard</button>
+								<button type="button" class="button small-btn gray-btn float-right">Delete</button>
+							</div>
+						</li>
+						<li class="asset" data-type="image" data-id="00002">
+							<span class="asset-selection">
+								<input id="asset-checkbox-2" class="asset-checkbox" type="checkbox"><label for="asset-checkbox-2"></label>
+							</span>
+							<figure class="asset-view">
+								<a class="modal-link" href="#image-modal">
+									<img class="asset-image" src="../img/tmp/asset-image-2.jpg" alt="">
+								</a>
+							</figure>
+							<div class="asset-details">
+								<p class="asset-name">asset-image-2.jpg</p>
+								<p class="asset-size">1.2mb</p>
+								<p class="asset-date">13 December 2015</p>
+								<button type="button" class="button small-btn green-btn" onclick="parent.migAsset.createAsset(this);">Add to clipboard</button>
+								<button type="button" class="button small-btn gray-btn float-right">Delete</button>
+							</div>
+						</li>
+						<li class="asset" data-type="file" data-id="00005">
+							<span class="asset-selection">
+								<input id="asset-checkbox-3" class="asset-checkbox" type="checkbox"><label for="asset-checkbox-3"></label>
+							</span>
+							<figure class="asset-view">
+								<a class="modal-link" href="#image-modal">
+									<img class="asset-image" src="../img/controls/asset-file.svg" alt="">
+									<span class="asset-format">
+										pdf
+									</span>
+								</a>
+							</figure>
+							<div class="asset-details">
+								<p class="asset-name">template</p>
+								<p class="asset-size">3.2mb</p>
+								<p class="asset-date">12 August 2014</p>
+								<button type="button" class="button small-btn green-btn" onclick="parent.migAsset.createAsset(this);">Add to clipboard</button>
+								<button type="button" class="button small-btn gray-btn float-right">Delete</button>
+							</div>
+						</li>
+						<li class="asset" data-type="template" data-id="00005">
+							<span class="asset-selection">
+								<input id="asset-checkbox-3" class="asset-checkbox" type="checkbox"><label for="asset-checkbox-3"></label>
+							</span>
+							<figure class="asset-view">
+								<a class="modal-link" href="#image-modal">
+									<img class="asset-image" src="../img/controls/asset-file.svg" alt="">
+									<span class="asset-format">
+										pdf
+									</span>
+								</a>
+							</figure>
+							<div class="asset-details">
+								<p class="asset-name">asset-file.pdf</p>
+								<p class="asset-size">3.2mb</p>
+								<p class="asset-date">12 August 2014</p>
+								<button type="button" class="button small-btn green-btn" onclick="parent.migAsset.createAsset(this);">Add to clipboard</button>
+								<button type="button" class="button small-btn gray-btn float-right">Delete</button>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="backdrop">
+	<div class="modal modal-asset" id="image-modal">
+		<button type="button" class="modal-close-btn">
+			<i class="icon-close"></i>
+		</button>
+		<div class="asset-view">
+			<img id="modal-crop-image" class="asset-image" src="../img/tmp/modal-image.jpg" alt="">
+			<button type="button" class="button blue-btn crop-btn" data-crop="#modal-crop-image">Crop image</button>
+		</div>
+		<div class="asset-panel">
+			<div class="asset-details">
+				<p><strong>File name:</strong> blanco-image-name.jpeg</p>
+				<p><strong>File type:</strong> JPEG</p>
+				<p><strong>File size:</strong> 310kb</p>
+				<p><strong>Dimensions:</strong> 600 x 700</p>
+				<p><strong>Uploaded on:</strong> Nov 20, 2015 @ 14:25</p>
+			</div>
+			<div class="asset-action">
+				<a class="button download-btn" href="/assetdownload.handler?assetId=68491">Download</a>
+				<button type="button" class="button add-btn" onclick="parent.migAsset.triggerAsset(68491);">Add to clipboard</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="../js/script.js"></script>
+</body>
+</html>

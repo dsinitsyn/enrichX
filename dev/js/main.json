@@ -1,0 +1,7 @@
+[
+	"dev/js/parts/login.js",
+	"dev/js/parts/mig-alert.js",
+	"dev/js/parts/mig-tabs.js",
+	"dev/js/parts/mig-assets.js",
+	"dev/js/parts/mig-menu.js"
+]

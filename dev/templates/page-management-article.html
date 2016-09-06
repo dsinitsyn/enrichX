@@ -1,0 +1,259 @@
+//= templates/head.html
+<div class="container">
+	<div class="grid-12">
+		<div class="cell-4">
+			Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.
+		</div>
+	</div>
+	<div class="grid">
+		<div class="cell">
+			<button type="button" class="button add-btn">Add article</button>
+			<button type="button" class="button add-btn">Edit categories</button>
+			<button type="button" class="button add-btn">Edit tags</button>
+		</div>
+	</div>
+	<div class="grid-2">
+		<div class="cell-1">
+			<div class="widget">
+				<header>
+					Current status
+				</header>
+				<table class="status-table">
+					<thead>
+						<tr>
+							<td class="green">20,834</td>
+							<td class="red">33</td>
+							<td class="orange">70</td>
+							<td class="orange">56</td>
+							<td class="orange">4</td>
+							<td class="orange">4,800</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Complete articles</td>
+							<td>Missing descriptions</td>
+							<td>Incomplete descriptions</td>
+							<td>Incomplete media</td>
+							<td>Missing categorisation</td>
+							<td>Incomplete SEO</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="cell-1">
+			<div class="widget">
+				<header>
+					Tabs widget
+				</header>
+				<section>
+					<ul class="tabs">
+						<li><a href="#liked" class="active">MOST LIKED</a></li>
+						<li><a href="#viewed" class="">MOST VIEWED</a></li>
+						<li><a href="#sales" class="">CLICKS LINKING TO SALES</a></li>
+					</ul>					
+				</section>
+				<div class="tabs-content">
+					<div id="liked" class="active">
+						<table class="widget-table">
+							<thead>
+								<tr>
+									<td align="center"></td>
+									<td>Article</td>
+									<td>Likes</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">1</td>
+									<td>What to wear this autumn</td>
+									<td>23</td>
+								</tr>
+								<tr>
+									<td align="center">2</td>
+									<td>Are you ready for summer?</td>
+									<td>19</td>
+								</tr>
+								<tr>
+									<td align="center">3</td>
+									<td>Perfect for the beach</td>
+									<td>16</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="viewed" class="">
+						<table class="widget-table">
+							<thead>
+								<tr>
+									<td align="center"></td>
+									<td>Article</td>
+									<td>Likes</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">1</td>
+									<td>What to wear this autumn</td>
+									<td>23</td>
+								</tr>
+								<tr>
+									<td align="center">2</td>
+									<td>Are you ready for summer?</td>
+									<td>19</td>
+								</tr>
+								<tr>
+									<td align="center">3</td>
+									<td>Perfect for the beach</td>
+									<td>16</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="sales" class="">
+						<table class="widget-table">
+							<thead>
+								<tr>
+									<td align="center"></td>
+									<td>Article</td>
+									<td>Likes</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">1</td>
+									<td>What to wear this autumn</td>
+									<td>23</td>
+								</tr>
+								<tr>
+									<td align="center">2</td>
+									<td>Are you ready for summer?</td>
+									<td>19</td>
+								</tr>
+								<tr>
+									<td align="center">3</td>
+									<td>Perfect for the beach</td>
+									<td>16</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="cell">
+			<div class="widget">
+				<header>Table name</header>
+				<section class="table-nav">
+					<div class="nav-group">
+						<label for="nav-input">Page</label>
+						<input class="nav-pages" type="text" value="2">
+						<label for="nav-input">of 22</label>
+					</div>
+					<div class="nav-group">
+						<label for="nav-select">View</label>
+						<select id="nav-select" class="nav-pages" name="nav-select">
+							<option value="2">50</option>
+							<option value="2">100</option>
+							<option value="3">200</option>
+							<option value="4">500</option>
+						</select>
+						<label for="nav-select">items per page</label>
+					</div>
+				</section>
+				<section class="action-panel">
+					<select class="action-select" name="" id="">
+						<option value="" disabled="" selected="">Bulk action (33 selected)</option>
+						<option value="">Action event 1</option>
+						<option value="">Action event 2</option>
+						<option value="">Action event 3</option>
+						<option value="">Action event 4</option>
+					</select>
+					<button type="button" class="button blue-btn">Filter</button>
+					<button type="button" class="button reset-btn">Reset filters</button>
+				</section>
+				<table class="table">
+					<thead>
+						<tr>
+							<td>Select</td>
+							<td>Article title</td>
+							<td>Published on</td>
+							<td>Complete</td>
+							<td>Categories</td>
+							<td>Tags</td>
+							<td>Status</td>
+							<td>Websites</td>
+							<td>Action</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td align="center"><input id="item1-checkbox" type="checkbox"><label for="item1-checkbox"></label></td>
+							<td>
+								<p class="title">Gold shorts</p>
+								<p class="sub-title">Gold shorts</p>				
+							</td>
+							<td>13/02/2015</td>
+							<td>
+								<div class="status-circle orange">
+									<span></span>
+								</div>
+							</td>
+							<td>
+								Styling, <br>
+								Fashion week
+							</td>
+							<td></td>
+							<td>Live</td>
+							<td>
+								Spain <br>
+								Portugal <br>
+								France
+							</td>
+							<td>
+								<button class="button mig-inset-btn" data-href="templates/assets-video.html" name="Edit product name">Edit</button>
+								<button class="button" name="">Delete</button>
+								<input type="button" class="button" name="" value="Delete">
+							</td>
+						</tr>
+						<tr>
+							<td align="center"><input id="item1-checkbox" type="checkbox"><label for="item1-checkbox"></label></td>
+							<td>
+								<p class="title">Summer wear</p>
+								<p class="sub-title">summer-wear</p>
+							</td>
+							<td>04/02/2015</td>
+							<td>
+								<div class="status-circle green">
+									<span></span>
+								</div>
+							</td>
+							<td>
+								Styling, <br>
+								Fashion week
+							</td>
+							<td>
+								<p>hair, makeup, lips, beauty, eyeliner, mascara, lipstick, eyes, makeover, 2015</p>
+							</td>
+							<td>Live</td>
+							<td>
+								Spain <br>
+								Portugal <br>
+								France
+							</td>
+							<td>
+								<button class="button mig-inset-btn" data-href="templates/assets-video.html" name="Edit product name">Edit</button>
+								<button class="button" name="">Delete</button>
+								<input type="button" class="button" name="" value="Delete">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+//= templates/footer.html

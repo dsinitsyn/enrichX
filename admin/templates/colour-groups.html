@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<title>EnrichX</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://file.myfontastic.com/moSRyvkVpCWnTBx8bz3syW/icons.css" rel="stylesheet">
+
+
+    <script src="../js/components.js"></script>
+    <script src='../../components/tinymce/js/tinymce/tinymce.min.js'></script>
+</head>
+<body>
+<ul class="mig-breadcrumbs">
+</ul>
+<div class="container">
+	<div class="grid-2">
+		<div class="cell-1">
+			<div class="grid-3">
+				<div class="cell-2">
+					<h6>Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.</h6>
+				</div>
+			</div>
+			<div class="grid">
+				<div class="cell">
+					<button type="button" class="button add-btn">Add colour group</button>
+					<button type="button" class="button blue-btn">View swatches</button>
+				</div>
+			</div>
+			<div class="widget">
+				<header>Colour Groups(13)</header>
+				<section class="table-nav">
+					<div class="nav-group">
+						<label for="nav-input">Page</label>
+						<input class="nav-pages" type="text" value="1">
+						<label for="nav-input">of 22</label>
+					</div>
+					<div class="nav-group">
+						<label for="nav-select">View</label>
+						<select id="nav-select" class="nav-pages" name="nav-select" id="">
+							<option value="2">50</option>
+							<option value="2">100</option>
+							<option value="3">200</option>
+							<option value="4">500</option>
+						</select>
+						<label for="nav-select">groups per page</label>
+					</div>
+				</section>
+				<section class="action-panel">
+					<button type="button" class="button blue-btn">Filter</button>
+					<button type="button" class="button reset-btn">Reset filters</button>
+				</section>
+				<table class="table">
+					<thead>
+						<tr>
+							<td>Group</td>
+							<td>HEX code</td>
+							<td>Swatch count</td>
+							<td>Action</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Blue</td>
+							<td>
+								<div class="color-tile" style="background-color: #162296;"></div>
+								#162296
+							</td>
+							<td>12</td>
+							<td>
+								<button class="button">Edit</button>
+								<button class="button">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Red</td>
+							<td><div class="color-tile" style="background-color: #eb0000;"></div>
+								#eb0000</td>
+							<td>27</td>
+							<td>
+								<button class="button">Edit</button>
+								<button class="button">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Green</td>
+							<td><div class="color-tile" style="background-color: #16b23e;"></div>
+								#16b23e</td>
+							<td>7</td>
+							<td>
+								<button class="button">Edit</button>
+								<button class="button">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Brown</td>
+							<td><div class="color-tile" style="background-color: #ab5607;"></div>
+								#ab5607</td>
+							<td>3</td>
+							<td>
+								<button class="button">Edit</button>
+								<button class="button">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Yellow</td>
+							<td><div class="color-tile" style="background-color: #f5c400;"></div>
+								#f5c400</td>
+							<td>13</td>
+							<td>
+								<button class="button">Edit</button>
+								<button class="button">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Orange</td>
+							<td><div class="color-tile" style="background-color: #f28a0d;"></div>
+								#f28a0d</td>
+							<td>18</td>
+							<td>
+								<button class="button">Edit</button>
+								<button class="button">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Grey</td>
+							<td><div class="color-tile" style="background-color: #868a94;"></div>
+								#868a94</td>
+							<td>4</td>
+							<td>
+								<button class="button">Edit</button>
+								<button class="button">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Pink</td>
+							<td><div class="color-tile" style="background-color: #eb87b4;"></div>
+								#eb87b4</td>
+							<td>22</td>
+							<td>
+								<button class="button">Edit</button>
+								<button class="button">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Black</td>
+							<td><div class="color-tile" style="background-color: #000000;"></div>
+								#000000</td>
+							<td>2</td>
+							<td>
+								<button class="button">Edit</button>
+								<button class="button">Delete</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<section class="table-nav align-center">
+					<div class="nav-group">
+						<ul class="nav-pagination">
+							<li><a href="#"><i class="icon-nav-first"></i></a></li>
+							<li><a href="#"><i class="icon-nav-left"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#" class="active">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">...</a></li>
+							<li><a href="#">17</a></li>
+							<li><a href="#"><i class="icon-nav-right"></i></a></li>
+							<li><a href="#"><i class="icon-nav-last"></i></a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<title>EnrichX</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://file.myfontastic.com/moSRyvkVpCWnTBx8bz3syW/icons.css" rel="stylesheet">
+
+
+    <script src="../js/components.js"></script>
+    <script src='../../components/tinymce/js/tinymce/tinymce.min.js'></script>
+</head>
+<body>
+<ul class="mig-breadcrumbs">
+</ul>
+<div class="container">
+	<div class="top-panel">	
+		<button type="button" class="button save-btn">Save changes</button>
+		<button type="button" class="button preview-btn">Preview</button>
+		<button type="button" class="button continue-btn">Save and continue</button>
+	</div>
+	<div class="grid-12 underline">
+		<div class="group cell-2">
+			<label for="select_01">Select</label>
+			<select id="select_01" name="select">
+				<option value="" disabled="" selected="">Placeholder</option>
+				<option value="">Action event 1</option>
+				<option value="">Action event 2</option>
+				<option value="">Action event 3</option>
+				<option value="">Action event 4</option>
+			</select>
+		</div>
+		<div class="cell-6 float-right align-right">
+			<p>Last edited: Today, 12:45 CET</p>
+		</div>
+	</div>
+	<div class="grid-12">
+		<div class="cell-11">
+			<ul class="nav-tabs">
+				<li><a href="#nav-details" class="active">Details</a></li>
+				<li><a href="#nav-content" class="">Content</a></li>
+				<li><a href="#nav-history" class="">History</a></li>
+				<li><a href="#nav-navigation" class="">Navigation</a></li>
+			</ul>
+			<div class="nav-content">
+				<div id="nav-details" class="active grid-5">
+					<div class="cell-3">
+						<div class="group">
+							<label for="text_01">Page title</label>
+							<small>Titles should not be etiam porta.</small>
+							<input id="text_01" type="text">
+						</div>
+						<div class="group">
+							<label for="text_02">Meta title</label>
+							<small>This is shown aenean ornare sit malesuada.</small>
+							<input id="text_02" type="text">
+						</div>
+						<div class="group">
+							<label>Meta keywords</label>
+							<small>These help Google find the page. Seperate each tag with a comma.</small>
+							<input type="button" id="tags1" class="tag-input-hidden" value="tag1'cs,tag2adw,tag3">
+						</div>
+						<div class="group">
+							<label for="text_04">Meta canonical</label>
+							<small>This is shown aenean ornare sit malesuada.</small>
+							<input id="text_04" type="text">
+						</div>
+						<div class="group">
+							<label for="text_05">Meta description</label>
+							<small>This is the paragraph shown in Google Search Results. 30–60 words</small>
+						</div>
+					</div>
+					<div class="cell-2">
+						<div class="group">
+							<label for="select_01">Template</label>
+							<small>Choose a layout from the available designs</small>
+							<select id="select_01" name="select">
+								<option value="" disabled="" selected="">Placeholder</option>
+								<option value="">Action event 1</option>
+								<option value="">Action event 2</option>
+								<option value="">Action event 3</option>
+								<option value="">Action event 4</option>
+							</select>
+						</div>
+						<div class="group">
+							<label for="select_02">Page type</label>
+							<small>Dapibus Parturient Lorem Justo</small>
+							<select id="select_02" name="select">
+								<option value="" disabled="" selected="">Placeholder</option>
+								<option value="">Action event 1</option>
+								<option value="">Action event 2</option>
+								<option value="">Action event 3</option>
+								<option value="">Action event 4</option>
+							</select>
+						</div>
+						
+						<div class="group">
+							<label>Status</label>
+							<div class="grid-3">
+								<div class="cell-1">
+									<input id="radio1" type="radio" name="radio" checked="">
+									<label for="radio1">Active</label>
+								</div>
+								<div class="cell-1">
+									<input id="radio2" type="radio" name="radio">
+									<label for="radio2">Inactive</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="nav-content" class="grid-4">
+					<div class="cell-3">
+						<div class="group">
+							<label for="text_01">Article title</label>
+							<small>Titles should not be etiam porta.</small>
+							<input id="text_01" type="text" value="Home">
+						</div>
+						<div class="group">
+							<label for="text_02">Article body</label>
+							<small>This is shown aenean ornare sit malesuada.</small>
+							<textarea id="text_02" rows="20" placeholder="">Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</textarea>
+						</div>
+					</div>
+				</div>
+
+				<div id="nav-history" class="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At iure nesciunt corporis, quia. Hic ducimus odit distinctio accusamus incidunt veniam numquam ex enim fuga esse ullam iure quas, itaque, maxime nihil unde eius eos ea eaque tenetur explicabo vitae reprehenderit quam totam. Temporibus voluptatem nesciunt repellat. Nesciunt, ducimus modi rerum!</p>
+				</div>
+
+				<div id="nav-navigation" class="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia cum consectetur beatae autem quos? Quis reiciendis cum, maiores dolorem minus, ut aperiam earum!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At iure nesciunt corporis, quia. Hic ducimus odit distinctio accusamus incidunt veniam numquam ex enim fuga esse ullam iure quas, itaque, maxime nihil unde eius eos ea eaque tenetur explicabo vitae reprehenderit quam totam. Temporibus voluptatem nesciunt repellat. Nesciunt, ducimus modi rerum!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="../js/script.js"></script>
+</body>
+</html>

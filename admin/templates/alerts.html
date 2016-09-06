@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<title>EnrichX</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://file.myfontastic.com/moSRyvkVpCWnTBx8bz3syW/icons.css" rel="stylesheet">
+
+
+    <script src="../js/components.js"></script>
+    <script src='../../components/tinymce/js/tinymce/tinymce.min.js'></script>
+</head>
+<body>
+<ul class="mig-breadcrumbs">
+</ul>
+<div class="container">
+	<div class="grid">
+		<div>
+			<p>To show alert call function <em><strong>migAlert.show('message', 'status', time);</strong></em></p>
+			<p><strong>status:</strong> success, info, warning, error</p>
+			<p><strong>time:</strong> time before alert will be closed.</p>
+			<button onclick="migAlert.show('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quo!', 'success', 600)" type="button" class="button green-btn">Success alert</button>
+			<button onclick="migAlert.show('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, praesentium!', 'info')" type="button" class="button blue-btn">Info alert</button>
+			<button onclick="migAlert.show('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, accusamus.', 'warning', 2000)" type="button" class="button yellow-btn">Warning alert</button>
+			<button onclick="migAlert.show('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, accusamus.', 'error', 0)" type="button" class="button red-btn">Error alert</button>
+		</div>
+	</div>
+</div>
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+---Compass installing
+1) http://rubyinstaller.org/downloads/ - download ruby installer
+2) While installing mark Install Td/Tk support and Add Ruby to PATH
+3) Windows command promt run -
+gem upadate --system
+gem install sass
+gem install compass
+gem install --pre sass-css-importer - (add-on for connectivity CSS files, not only *.scss)
+than
+
+npm install -g gulp
+npm install
+bower install
+run gulp
